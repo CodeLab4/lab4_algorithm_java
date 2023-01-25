@@ -7,44 +7,58 @@ import java.util.List;
 
 public class NumberCardDivide_roy {
     public static void main(String[] args) {
-        int[] arrayA = {14, 35, 119};
-        int[] arrayB = {18, 30, 102};
-        int answer = 0;
+        int[] arrayA = {10, 20};
+        int[] arrayB = {5, 17, 20};
 
-        List<Integer> listA = new ArrayList<>();
-        int minA = Arrays.stream(arrayA).min().getAsInt();
+        int resultA = calculate(arrayA, arrayB);
+        int resultB = calculate(arrayB, arrayA);
 
-        for (int i = 1; i <= minA; i++) {
-            if (minA % i == 0) {
-                listA.add(i);
+        int answer = Math.max(resultA, resultB);
+
+        System.out.println(answer);
+    }
+
+    public static int calculate(int[] arrayA, int[] arrayB) {
+        List<Integer> list = new ArrayList<>();
+        int min = Arrays.stream(arrayA).min().getAsInt();
+
+        for (int i = 1; i <= min; i++) {
+            if (min % i == 0) {
+                list.add(i);
             }
         }
 
-        listA.sort(Collections.reverseOrder());
+        list.sort(Collections.reverseOrder());
 
-        int cnt = 0;
-        while (true) {
-            boolean flag = false;
-            int tempA = listA.get(cnt);
-            for (int i = 0; i < arrayA.length; i++) {
-                if(arrayA[i] % tempA != 0) {
-                    cnt++;
+        boolean flag = false;
+        int gcd = 0;
+
+        for (int i : list) {
+            for (int j = 0; j < arrayA.length; j++) {
+                if (arrayA[j] % i != 0) {
+                    break;
+                }
+                if (j == arrayA.length - 1) {
                     flag = true;
                     break;
                 }
             }
-            if(!flag) {
+            if (flag) {
+                gcd = i;
                 break;
             }
         }
-        
-        int gcdA = listA.get(cnt);
 
-        for (int i = 0; i < arrayB.length; i++) {
-            
+        int result = 0;
+        for (int j : arrayB) {
+            if (j % gcd == 0) {
+                result = 0;
+                break;
+            } else {
+                result = gcd;
+            }
         }
 
-        System.out.println(cnt);
-        System.out.println(answer);
+        return result;
     }
 }
