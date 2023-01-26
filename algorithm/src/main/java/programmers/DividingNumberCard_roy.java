@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class NumberCardDivide_roy {
+public class DividingNumberCard_roy {
     public static void main(String[] args) {
         int[] arrayA = {10, 20};
         int[] arrayB = {5, 17, 20};
