@@ -41,7 +41,7 @@ public class NumberCardDivide_roy {
         int gcdA = listA.get(cnt);
 
         for (int i = 0; i < arrayB.length; i++) {
-            
+
         }
 
         System.out.println(cnt);
