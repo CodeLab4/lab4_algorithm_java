@@ -1,3 +1,4 @@
+
 package programmers;
 
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class NumberCardDivide_roy {
                 break;
             }
         }
-        
+
         int gcdA = listA.get(cnt);
 
         for (int i = 0; i < arrayB.length; i++) {
