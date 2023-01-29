@@ -1,9 +1,9 @@
 package baekjoon;
 
 import java.io.*;
-        import java.util.LinkedList;
-        import java.util.Queue;
-        import java.util.StringTokenizer;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class B2178_mungnam {
 
