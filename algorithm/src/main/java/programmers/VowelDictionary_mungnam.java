@@ -49,7 +49,8 @@ public class VowelDictionary_mungnam {
         return answer;
     }
 
-    static void rePermutation(List<String> dictionary, String[] vowelArray, String[] rePerm, int index, int stringLength, int vowelSize) {
+    static void rePermutation(List<String> dictionary, String[] vowelArray, String[] rePerm, int index,
+                              int stringLength, int vowelSize) {
         if (index == stringLength) {
             StringBuilder stringBuilder = new StringBuilder();
             for (String i : rePerm) {

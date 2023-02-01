@@ -1,4 +1,3 @@
-
 package programmers;
 
 import java.util.ArrayList;
@@ -28,13 +27,13 @@ public class NumberCardDivide_roy {
             boolean flag = false;
             int tempA = listA.get(cnt);
             for (int i = 0; i < arrayA.length; i++) {
-                if(arrayA[i] % tempA != 0) {
+                if (arrayA[i] % tempA != 0) {
                     cnt++;
                     flag = true;
                     break;
                 }
             }
-            if(!flag) {
+            if (!flag) {
                 break;
             }
         }

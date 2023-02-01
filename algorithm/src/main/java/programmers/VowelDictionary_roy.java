@@ -16,7 +16,7 @@ public class VowelDictionary_roy {
 
         List<String> list = new ArrayList<>(set);
         for (int i = 0; i < list.size(); i++) {
-            if(list.get(i).equals(word)) {
+            if (list.get(i).equals(word)) {
                 answer = i;
                 break;
             }
@@ -25,7 +25,7 @@ public class VowelDictionary_roy {
     }
 
     public static void recursion(char[] dictionary, Set<String> set, String str) {
-        if(str.length() > 5) {
+        if (str.length() > 5) {
             return;
         }
 
