@@ -1,6 +1,6 @@
 package programmers;
 
-public class KnightWeapons {
+public class KnightWeapons_Birdie {
 
     public static int solution(int number, int limit, int power) {
         int answer = 0;
