@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class Silver3_2606_Birdie {
+public class S2606_Birdie {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
-public class Silver5_2018_Birdie {
+public class S2018_Birdie {
 
     static int answer = 0;
     public static void main(String[] args) throws IOException {
