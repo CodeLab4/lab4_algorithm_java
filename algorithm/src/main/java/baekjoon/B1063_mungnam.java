@@ -1,6 +1,10 @@
 package baekjoon;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class B1063_mungnam {
@@ -196,32 +200,32 @@ public class B1063_mungnam {
 
     public static String makeString(int[] positionArray) {
         StringBuilder sb = new StringBuilder();
-        if(positionArray[1]==0) {
+        if (positionArray[1] == 0) {
             sb.append("A");
         }
-        if(positionArray[1]==1) {
+        if (positionArray[1] == 1) {
             sb.append("B");
         }
-        if(positionArray[1]==2) {
+        if (positionArray[1] == 2) {
             sb.append("C");
         }
-        if(positionArray[1]==3) {
+        if (positionArray[1] == 3) {
             sb.append("D");
         }
-        if(positionArray[1]==4) {
+        if (positionArray[1] == 4) {
             sb.append("E");
         }
-        if(positionArray[1]==5) {
+        if (positionArray[1] == 5) {
             sb.append("F");
         }
-        if(positionArray[1]==6) {
+        if (positionArray[1] == 6) {
             sb.append("G");
         }
-        if(positionArray[1]==7) {
+        if (positionArray[1] == 7) {
             sb.append("H");
         }
-        int number = 8-positionArray[0];
-        sb.append(Integer.toString(number));
+        int number = 8 - positionArray[0];
+        sb.append(number);
         return sb.toString();
     }
 }

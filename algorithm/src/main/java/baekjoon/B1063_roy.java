@@ -61,11 +61,10 @@ public class B1063_roy {
             fileMap.put(i, fileCnt++);
         }
 
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(fileMap.get(kingXy[1])).append(rankMap.get(kingXy[0])).append("\n");
-        stringBuilder.append(fileMap.get(stoneXy[1])).append(rankMap.get(stoneXy[0]));
+        String stringBuilder = String.valueOf(fileMap.get(kingXy[1])) + rankMap.get(kingXy[0]) + "\n"
+                + fileMap.get(stoneXy[1]) + rankMap.get(stoneXy[0]);
 
-        return stringBuilder.toString();
+        return stringBuilder;
     }
 
     static void movePoint(String input) {
@@ -81,9 +80,11 @@ public class B1063_roy {
 
         int[] temp = moveMap.get(input);
 
-        if((kingXy[0] + temp[0] >= 0 && kingXy[0] + temp[0] <= 7) && (kingXy[1] + temp[1] >= 0 && kingXy[1] + temp[1] <= 7)) {
-            if(kingXy[0] + temp[0] == stoneXy[0] && kingXy[1] + temp[1] == stoneXy[1]) {
-                if((stoneXy[0] + temp[0] >= 0 && stoneXy[0] + temp[0] <= 7) && (stoneXy[1] + temp[1] >= 0 && stoneXy[1] + temp[1] <= 7)) {
+        if ((kingXy[0] + temp[0] >= 0 && kingXy[0] + temp[0] <= 7) && (kingXy[1] + temp[1] >= 0
+                && kingXy[1] + temp[1] <= 7)) {
+            if (kingXy[0] + temp[0] == stoneXy[0] && kingXy[1] + temp[1] == stoneXy[1]) {
+                if ((stoneXy[0] + temp[0] >= 0 && stoneXy[0] + temp[0] <= 7) && (stoneXy[1] + temp[1] >= 0
+                        && stoneXy[1] + temp[1] <= 7)) {
                     kingXy[0] = kingXy[0] + temp[0];
                     kingXy[1] = kingXy[1] + temp[1];
                     stoneXy[0] = stoneXy[0] + temp[0];
