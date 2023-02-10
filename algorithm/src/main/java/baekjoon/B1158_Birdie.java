@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class S1158_Birdie {
+public class B1158_Birdie {
 
     public static void main(String[] args) {
 
