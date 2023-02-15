@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Stack;
 
-public class HamBugger_roy {
+public class Hamburger_roy {
     public static void main(String[] args) {
         int[] ingredient = {2, 1, 1, 2, 3, 1, 2, 3, 1};
 //        int[] ingredient = {1, 3, 2, 1, 2, 1, 3, 1, 2};
