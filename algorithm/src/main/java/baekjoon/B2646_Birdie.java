@@ -35,7 +35,7 @@ public class B2646_Birdie {
 
         if (i == 0) {
             System.out.println(-1);
-        }else {
+        } else {
             System.out.println(i);
         }
     }

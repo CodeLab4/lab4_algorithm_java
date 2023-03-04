@@ -16,7 +16,6 @@ public class DeckOfCards_Birdie {
             }
             if (index2 < cards2.length) {
 
-
                 if (check.equals(cards2[index2])) {
                     index2++;
                     continue;

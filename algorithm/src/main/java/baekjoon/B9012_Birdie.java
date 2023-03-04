@@ -32,7 +32,7 @@ public class B9012_Birdie {
             if (stack.isEmpty() && no == 0) {
                 System.out.println("YES");
             }
-            if(!stack.isEmpty() && no == 0){
+            if (!stack.isEmpty() && no == 0) {
                 System.out.println("NO");
             }
         }

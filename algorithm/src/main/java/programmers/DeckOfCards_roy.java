@@ -11,12 +11,12 @@ public class DeckOfCards_roy {
         int card2Index = 0;
 
         for (int i = 0; i < goal.length; i++) {
-            if(card1Index < cards1.length && goal[i].equals(cards1[card1Index])) {
+            if (card1Index < cards1.length && goal[i].equals(cards1[card1Index])) {
                 card1Index++;
                 continue;
             }
 
-            if(card2Index < cards2.length && goal[i].equals(cards2[card2Index])) {
+            if (card2Index < cards2.length && goal[i].equals(cards2[card2Index])) {
                 card2Index++;
                 continue;
             }

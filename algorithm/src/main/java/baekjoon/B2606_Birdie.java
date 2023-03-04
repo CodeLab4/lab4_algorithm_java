@@ -46,6 +46,7 @@ public class B2606_Birdie {
         }
 
         Node[] nodes;
+
         Graph(int size) {
             nodes = new Node[size];
             for (int i = 0; i < size; i++) {

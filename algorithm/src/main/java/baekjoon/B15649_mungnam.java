@@ -38,7 +38,7 @@ public class B15649_mungnam {
         }
         for (int i = 0; i < N; i++) {
             if (!visited[i]) {
-                visited[i]=true;
+                visited[i] = true;
                 array[depth] = i + 1;
                 dfs(depth + 1, N, M);
                 visited[i] = false;

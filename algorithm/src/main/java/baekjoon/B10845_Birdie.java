@@ -27,14 +27,14 @@ public class B10845_Birdie {
 
                 if (queue.size() > 0) {
                     System.out.println(queue.peek());
-                }else {
+                } else {
                     System.out.println(-1);
                 }
 
             } else if (command.equals("pop")) {
                 if (queue.size() > 0) {
                     System.out.println(queue.poll());
-                }else {
+                } else {
                     System.out.println(-1);
                 }
 
@@ -46,7 +46,7 @@ public class B10845_Birdie {
 
                 if (queue.size() == 0) {
                     System.out.println(1);
-                }else {
+                } else {
                     System.out.println(0);
                 }
 
@@ -54,14 +54,13 @@ public class B10845_Birdie {
 
                 if (queue.size() > 0) {
 
-
                     for (int j = 0; j < queue.size() - 1; j++) {
                         queue.offer(queue.poll());
                     }
                     String poll = queue.poll();
                     System.out.println(poll);
                     queue.offer(poll);
-                }else {
+                } else {
                     System.out.println(-1);
                 }
             }

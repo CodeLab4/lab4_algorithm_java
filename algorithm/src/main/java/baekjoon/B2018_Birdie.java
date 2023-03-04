@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 public class B2018_Birdie {
 
     static int answer = 0;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -19,7 +20,7 @@ public class B2018_Birdie {
 
         IntStream.rangeClosed(1, num)
                 .forEach(i -> {
-                    if(checkNum(i, num)) {
+                    if (checkNum(i, num)) {
                         setAnswer();
                     }
                 });
@@ -30,11 +31,12 @@ public class B2018_Birdie {
     public static void setAnswer() {
         answer++;
     }
+
     public static boolean checkNum(int number, int range) {
         int tmp = number + 1;
         while (number < range) {
             number += tmp;
-            tmp ++;
+            tmp++;
             if (number == range) {
                 return true;
             }

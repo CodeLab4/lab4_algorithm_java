@@ -9,7 +9,7 @@ public class Cola_roy {
 
         while (n >= a) {
             int temp = 0;
-            if(n % a != 0) {
+            if (n % a != 0) {
                 temp += n % a;
             }
 
