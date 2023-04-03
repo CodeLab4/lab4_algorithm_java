@@ -1,6 +1,6 @@
 package baekjoon;
 
-public class B2559 {
+public class B2559_Birdie {
     /**
      * import sys
      * input = sys.stdin.readline
