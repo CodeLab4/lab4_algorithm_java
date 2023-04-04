@@ -1,6 +1,6 @@
 package programmers.lv2;
 
-public class NewsClustering {
+public class NewsClustering_Birdie {
     /**
      * # 교집합을 합집합 크기로 나눈다.
      * def solution(str1, str2):
