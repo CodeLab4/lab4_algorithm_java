@@ -12,6 +12,7 @@ ex.
 ### 프로그래머스 제목
 #### level 1
 * 옹알이(2) - Babbling_2
+* 기사단원의 무기 - WeaponOfKnight
 #### level 2
 * 프린터 - Printer
 * [3차] 파일명 정렬 - FileNameSorting
