@@ -15,9 +15,4 @@ ex.
 #### level 2
 * 프린터 - Printer
 * [3차] 파일명 정렬 - FileNameSorting
-
-### 백준 번호
-#### silver 1
-* 1303번
-#### silver 3
-* 2606번
+* 게임 맵 최단거리 - GameMapBFS
