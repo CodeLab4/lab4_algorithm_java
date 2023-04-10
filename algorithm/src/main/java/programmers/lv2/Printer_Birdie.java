@@ -1,6 +1,6 @@
 package programmers.lv2;
 
-public class Printer {
+public class Printer_Birdie {
     /**
      * from collections import deque
      *
