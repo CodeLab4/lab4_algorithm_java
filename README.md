@@ -10,4 +10,14 @@ ex.
 백준 1002번 고뭉남 [2]
 
 ### 프로그래머스 제목
+#### level 1
 * 옹알이(2) - Babbling_2
+#### level 2
+* 프린터 - Printer
+* [3차] 파일명 정렬 - FileNameSorting
+
+### 백준 번호
+#### silver 1
+* 1303번
+#### silver 3
+* 2606번
