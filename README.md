@@ -13,6 +13,7 @@ ex.
 #### level 1
 * 옹알이(2) - Babbling_2
 * 기사단원의 무기 - WeaponOfKnight
+* 문자열 다루기 기본 - BasicStringValidator
 #### level 2
 * 프린터 - Printer
 * [3차] 파일명 정렬 - FileNameSorting
