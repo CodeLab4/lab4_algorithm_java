@@ -14,6 +14,7 @@ ex.
 * 옹알이(2) - Babbling_2
 * 기사단원의 무기 - WeaponOfKnight
 * 문자열 다루기 기본 - BasicStringValidator
+* 명예의 전당 (1) - HallOfFame_1
 #### level 2
 * 프린터 - Printer
 * [3차] 파일명 정렬 - FileNameSorting
