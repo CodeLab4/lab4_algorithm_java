@@ -3,6 +3,11 @@ package programmers.lv2;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 한 줄 소감:
+ * 생각보다 귀찮았던 문제였다. 내가 푸는 방식이 옳지 않았던 것일 수도 있겠지만, 나중에 시간이 되면 다시 풀어봐야겠다.
+ */
+
 public class Friends4Block_mungnam {
 
     static final char EMPTY = 'X';
