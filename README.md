@@ -21,3 +21,4 @@ ex.
 * 위장 - Camouflauge
 * 주식 - Stock
 * 스킬트리 - SkillTrees
+* 프렌즈4블록 - Friends4Block
