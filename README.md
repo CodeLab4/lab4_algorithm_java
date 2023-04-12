@@ -24,16 +24,16 @@ ex.
 
 #### level 2
 
-|     문제명     |       영문        | 로이 | 코어 | 버디 | 하나 | 뭉남 | 
-|:-----------:|:---------------:|:--:|:--:|:--:|:--:|:--:|
-|     프린터     |     Printer     |    |    | O  |    |    |
-| [3차] 파일명 정렬 | FileNameSorting |    |    |    |    | O  |
-|  게임 맵 최단거리  |   GameMapBFS    |    |    | O  |    |    |
-|     위장      |   Camouflauge   |    |    | O  |    |    |
-|     주식      |      Stock      |    |    | O  |    |    |
-|    스킬트리     |   SkillTrees    |    |    | O  |    |    |
-|   프렌즈4블록    |  Freinds4Block  |    |    |    |    | O  |
-|    멀리뛰기     |    LongJump     |    |    | O  |    |    |
-| 귤 고르기 | TangerineSelection |    |    |    |    | O  |
+|     문제명     |         영문         | 로이 | 코어 | 버디 | 하나 | 뭉남 | 
+|:-----------:|:------------------:|:--:|:--:|:--:|:--:|:--:|
+|     프린터     |      Printer       |    |    | O  |    |    |
+| [3차] 파일명 정렬 |  FileNameSorting   |    |    |    |    | O  |
+|  게임 맵 최단거리  |     GameMapBFS     |    |    | O  |    |    |
+|     위장      |    Camouflauge     |    |    | O  |    |    |
+|     주식      |       Stock        |    |    | O  |    |    |
+|    스킬트리     |     SkillTrees     |    |    | O  |    |    |
+|   프렌즈4블록    |   Freinds4Block    |    |    |    |    | O  |
+|    멀리뛰기     |      LongJump      |    |    | O  |    |    |
+|    귤 고르기    | TangerineSelection |    |    |    |    | O  |
 
   
