@@ -22,7 +22,7 @@ public class TangerineSelection_mungnam {
             tangerineMap.put(tangerine[i], tangerineMap.getOrDefault(tangerine[i], 0) + 1);
         }
 
-        List<Map.Entry<Integer, Integer>> entryList = new LinkedList<>(tangerineMap.entrySet());
+        List<Map.Entry<Integer, Integer>> entryList = new ArrayList<>(tangerineMap.entrySet());
         entryList.sort(Map.Entry.comparingByValue());
         for (int i = entryList.size() - 1; i >= 0; i--) {
             k -= entryList.get(i).getValue();
