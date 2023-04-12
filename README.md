@@ -34,5 +34,6 @@ ex.
 |    스킬트리     |   SkillTrees    |    |    | O  |    |    |
 |   프렌즈4블록    |  Freinds4Block  |    |    |    |    | O  |
 |    멀리뛰기     |    LongJump     |    |    | O  |    |    |
+| 귤 고르기 | TangerineSelection |    |    |    |    | O  |
 
   
