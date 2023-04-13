@@ -1,6 +1,6 @@
 package programmers.lv0;
 
-public class AdditionOfFractions_core {
+public class AdditionOfFractions_Core {
     public static void main(String[] args) {
         System.out.println(solution(1, 2, 3, 4));
     }

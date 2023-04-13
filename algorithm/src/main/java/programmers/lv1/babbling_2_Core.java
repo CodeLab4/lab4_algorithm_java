@@ -1,6 +1,6 @@
 package programmers.lv1;
 
-public class babbling_2_core {
+public class babbling_2_Core {
     public static void main(String[] args) {
         System.out.println(solution(new String[]{"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"}));
     }

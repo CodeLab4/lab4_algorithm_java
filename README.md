@@ -10,7 +10,7 @@ ex.
 
 백준 1002번 고뭉남 [2]
 
-### 프로그래머스 제목
+_### 프로그래머스 제목_
 
 #### level 0
 |  문제명   |         영문          | 로이  | 코어  | 버디  | 하나  | 뭉남  | 
@@ -41,5 +41,6 @@ ex.
 |   프렌즈4블록    |  Freinds4Block  |    |    |    |    | O  |
 |    멀리뛰기     |    LongJump     |    |    | O  |    |    |
 |    귤 고르기    | TangerineSelect | O  |    |    |    | O  |
+|  전화번호 목록  | ListOfPhoneNumbers |   |  O  |    |    |    |
 
   
