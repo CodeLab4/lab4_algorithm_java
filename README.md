@@ -19,14 +19,14 @@ ex.
 
 #### level 1
 
-|    문제명     |          영문          | 로이 | 코어 | 버디 | 하나 | 뭉남 | 
-|:----------:|:--------------------:|:--:|:--:|:--:|:--:|:--:|
-|   옹알이(2)   |      Babbling_2      | O  | O  | O  | O  | O  |
-|  기사단원의 무기  |    WeaponOfKnight    | O  |    |    |    |    |
-| 문자열 다루기 기본 | BasicStringValidator |    |    |    | O  |    |
-| 명예의 전당 (1) |     HallOfFame_1     | O  |    |    |    |    |
-|  문자열 나누기   |     StringSplit      | O  |    |    |    | O  |
-| 완주하지 못한 선수 | ARunnerWhoFailedToFinish |     |  O  |     |    |    |
+|    문제명     |            영문            | 로이 | 코어 | 버디 | 하나 | 뭉남 | 
+|:----------:|:------------------------:|:--:|:--:|:--:|:--:|:--:|
+|   옹알이(2)   |        Babbling_2        | O  | O  | O  | O  | O  |
+|  기사단원의 무기  |      WeaponOfKnight      | O  |    |    |    |    |
+| 문자열 다루기 기본 |   BasicStringValidator   |    |    |    | O  |    |
+| 명예의 전당 (1) |       HallOfFame_1       | O  |    |    |    |    |
+|  문자열 나누기   |       StringSplit        | O  |    |    |    | O  |
+| 완주하지 못한 선수 | ARunnerWhoFailedToFinish |    | O  |    |    |    |
 
 #### level 2
 

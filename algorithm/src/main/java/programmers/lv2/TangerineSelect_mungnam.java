@@ -2,7 +2,7 @@ package programmers.lv2;
 
 import java.util.*;
 
-public class TangerineSelection_mungnam {
+public class TangerineSelect_mungnam {
     public static void main(String[] args) {
 
         int k = 6;
