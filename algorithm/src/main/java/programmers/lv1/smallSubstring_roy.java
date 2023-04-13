@@ -1,6 +1,6 @@
 package programmers.lv1;
 
-public class smallSubstring {
+public class smallSubstring_roy {
     public static void main(String[] args) {
         System.out.println(solution("314314314314314314", "271271271271271271"));
     }
