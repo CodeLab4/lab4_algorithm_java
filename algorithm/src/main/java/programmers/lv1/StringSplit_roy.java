@@ -17,22 +17,22 @@ public class StringSplit_roy {
         char ch = '0';
 
         for (int i = 0; i < s.length(); i++) {
-            if(!flag) {
+            if (!flag) {
                 ch = s.charAt(i);
                 flag = true;
             }
 
             sb.append(s.charAt(i));
 
-            if(s.charAt(i) == ch) {
+            if (s.charAt(i) == ch) {
                 cntX++;
             }
 
-            if(s.charAt(i) != ch) {
+            if (s.charAt(i) != ch) {
                 cntY++;
             }
 
-            if(cntX == cntY) {
+            if (cntX == cntY) {
                 sb.append(" ");
                 flag = false;
                 cntX = 0;

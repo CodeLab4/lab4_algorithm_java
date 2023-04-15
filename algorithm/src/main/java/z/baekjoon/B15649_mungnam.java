@@ -9,7 +9,7 @@ public class B15649_mungnam {
 
     private static int[] array;
     private static boolean[] visited;
-    private static StringBuilder stringBuilder = new StringBuilder();
+    private static final StringBuilder stringBuilder = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
 

@@ -57,8 +57,7 @@ public class Cache_mungnam {
     }
 
     public static void addCityWhenCacheHit(List<String> cache, String city) {
-        int index = cache.indexOf(city);
-        cache.remove(index);
+        cache.remove(city);
         cache.add(city);
     }
 
@@ -79,10 +78,7 @@ public class Cache_mungnam {
     }
 
     public static boolean checkCacheHitOrMiss(List<String> cache, String city) {
-        if (!cache.contains(city)) {
-            return false;
-        }
-        return true;
+        return cache.contains(city);
     }
 }
 

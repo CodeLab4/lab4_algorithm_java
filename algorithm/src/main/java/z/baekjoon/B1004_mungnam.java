@@ -1,10 +1,6 @@
 package z.baekjoon;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -53,16 +49,9 @@ public class B1004_mungnam {
                 startDistance = Math.sqrt(Math.pow(planet.x - start.x, 2) + Math.pow(planet.y - start.y, 2));
                 destinationDistance = Math.sqrt(
                         Math.pow(planet.x - destination.x, 2) + Math.pow(planet.y - destination.y, 2));
-                if (startDistance > planet.r) {     // start는 planet 안에 포함되지 않음
-                    startFlag = false;
-                } else {
-                    startFlag = true;
-                }
-                if (destinationDistance > planet.r) {
-                    destinationFlag = false;
-                } else {
-                    destinationFlag = true;
-                }
+                // start는 planet 안에 포함되지 않음
+                startFlag = !(startDistance > planet.r);
+                destinationFlag = !(destinationDistance > planet.r);
 
                 if (startFlag && destinationFlag) {
                     continue;

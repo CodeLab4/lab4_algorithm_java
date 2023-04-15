@@ -3,11 +3,7 @@ package z.programmers;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Compression_mungnam {
     public static void main(String[] args) throws IOException {
@@ -52,7 +48,7 @@ public class Compression_mungnam {
                 break;
             }
             if (!flag) {
-                indexList.add(dictionary.get(msg.substring(i, msg.length())));
+                indexList.add(dictionary.get(msg.substring(i)));
                 break;
             }
         }

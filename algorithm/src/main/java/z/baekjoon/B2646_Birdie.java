@@ -88,7 +88,7 @@ public class B2646_Birdie {
                 Node pop = stack.pop();
 
                 for (Node n : pop.adjacent) {
-                    if (n.marked == false) {
+                    if (!n.marked) {
                         n.marked = true;
                         stack.push(n);
                         count++;
@@ -116,7 +116,7 @@ public class B2646_Birdie {
             count++;
             node.marked = true;
             for (Node n : node.adjacent) {
-                if (n.marked == false) {
+                if (!n.marked) {
                     count = dfsRecursion(n, to, count);
                 }
             }

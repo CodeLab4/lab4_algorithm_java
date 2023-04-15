@@ -1,9 +1,6 @@
 package programmers.lv2;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class TangerineSelect_roy {
     public static void main(String[] args) {
@@ -23,7 +20,7 @@ public class TangerineSelect_roy {
         for (int i = cnt.length; i > 0; i--) {
             k -= cnt[i - 1];
             answer++;
-            if(k <= 0) {
+            if (k <= 0) {
                 break;
             }
         }

@@ -29,7 +29,7 @@ public class StringSplit_mungnam {
                     different++;
                 }
                 if (same == different) {
-                    s = s.substring(j + 1, s.length());
+                    s = s.substring(j + 1);
                     result++;
                     i = -1;
                     break;

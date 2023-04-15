@@ -14,25 +14,25 @@ class WeaponOfKnight_mungnam {
         boolean flag;
 
         for (int i = 1; i <= number; i++) {
-            aliCount=0;
+            aliCount = 0;
             flag = true;
             for (int j = 1; j <= Math.sqrt(i); j++) {
-                if(i%j==0) {
-                    aliCount+=2;
+                if (i % j == 0) {
+                    aliCount += 2;
                     if (j * j == i) {
                         aliCount--;
                     }
-                    if(aliCount>limit) {
+                    if (aliCount > limit) {
                         flag = false;
                         break;
                     }
                 }
             }
-            if(!flag) {
-                answer+=power;
+            if (!flag) {
+                answer += power;
                 continue;
             }
-            answer+=aliCount;
+            answer += aliCount;
         }
 
 

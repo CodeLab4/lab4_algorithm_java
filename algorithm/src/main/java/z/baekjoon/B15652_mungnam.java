@@ -1,17 +1,13 @@
 package z.baekjoon;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.StringTokenizer;
 
 public class B15652_mungnam {
 
     private static int N, M;
     private static int[] array;
-    private static StringBuilder stringBuilder = new StringBuilder();
+    private static final StringBuilder stringBuilder = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
 

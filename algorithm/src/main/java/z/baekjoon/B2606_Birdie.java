@@ -82,7 +82,7 @@ public class B2606_Birdie {
                 Node r = stack.pop();
 
                 for (Node n : r.adjacent) {
-                    if (n.marked == false) {
+                    if (!n.marked) {
                         n.marked = true;
                         stack.push(n);
                     }
