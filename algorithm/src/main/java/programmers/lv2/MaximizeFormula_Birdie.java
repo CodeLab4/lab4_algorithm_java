@@ -1,6 +1,6 @@
 package programmers.lv2;
 
-public class MaximizeFormula {
+public class MaximizeFormula_Birdie {
     /**
      * from itertools import permutations
      *
