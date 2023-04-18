@@ -53,5 +53,6 @@ _### 프로그래머스 제목_
 |   전화번호 목록   | ListOfPhoneNumbers |    | O  |    |    |    |
 |   수식 최대화    |  MaximizeFormula   |    |    | O  |    |    |
 |  이진변환 반복하기  |    RepeatBinary    |    |    | O  |    |    |
+|   숫자의 표현    |  NumberExpression  |    |    | O  |    |    |
 
   
