@@ -34,6 +34,7 @@ _### 프로그래머스 제목_
 | 크기가 작은 부분문자열 |      SmallSubstring      | O  |    |    |    |    |
 |    둘만의 암호    |      SecretBetween       |    |    |    |    | O  |
 |    추억 점수     |       MemoryScore        |    |    |    |    | O  |
+|   대충 만든 자판   |    ImprovisedKeyboard    |    |    |    |    | O  |
 
 
 #### level 2
