@@ -37,6 +37,7 @@ _### 프로그래머스 제목_
 |   대충 만든 자판   |    ImprovisedKeyboard    |    |    |    |    | O  |
 | 가장 가까운 같은 글자 |  NearestIdenticalLetter  | O  |    |    |    |    |
 |    추억 점수     |       MemoryScore        | O  |    |    |    |    |
+|     덧칠하기     |        PaintOver         | O  |    |    |    |    |
 
 #### level 2
 
