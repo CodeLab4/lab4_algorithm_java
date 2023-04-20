@@ -1,0 +1,37 @@
+package z_legacy.baekjoon;
+
+import java.io.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.StringTokenizer;
+
+public class B14425_mungnam {
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(stringTokenizer.nextToken());
+        int M = Integer.parseInt(stringTokenizer.nextToken());
+        int answer = 0;
+        Set<String> set = new HashSet<>();
+
+        for (int i = 0; i < N; i++) {
+            set.add(br.readLine());
+        }
+
+        for (int i = 0; i < M; i++) {
+            String temp = br.readLine();
+            if (set.contains(temp)) {
+                answer++;
+            }
+        }
+
+        bw.write(Integer.toString(answer));
+        bw.newLine();
+
+        bw.flush();
+        bw.close();
+    }
+}
