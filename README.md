@@ -21,24 +21,25 @@ _### 프로그래머스 제목_
 
 #### level 1
 
-|       문제명       |              영문               | 로이 | 코어 | 버디 | 하나 | 뭉남 | 
-|:---------------:|:-----------------------------:|:--:|:--:|:--:|:--:|:--:|
-|     옹알이(2)      |          Babbling_2           | O  | O  | O  | O  | O  |
-|    기사단원의 무기     |        WeaponOfKnight         | O  |    | O  |    | O  |
-|   문자열 다루기 기본    |     BasicStringValidator      |    |    |    | O  |    |
-|   명예의 전당 (1)    |         HallOfFame_1          | O  |    |    |    |    |
-|     문자열 나누기     |          StringSplit          | O  |    |    |    | O  |
-|   완주하지 못한 선수    |   ARunnerWhoFailedToFinish    |    | O  |    |    |    |
-|      약수의 합      |         SumOfDivisors         |    |    |    | O  |    |
-|     평균 구하기      |       AverageCalculator       |    |    |    | O  |    |
-|     짝수와 홀수      |          EvenAndOdd           |    |    |    | O  |    |
-|  크기가 작은 부분문자열   |        SmallSubstring         | O  |    |    |    |    |
-|     둘만의 암호      |         SecretBetween         |    |    |    |    | O  |
-|      추억 점수      |          MemoryScore          | O  |    |    |    | O  |
-|    대충 만든 자판     |      ImprovisedKeyboard       | O  |    |    |    | O  |
-|  가장 가까운 같은 글자   |    NearestIdenticalLetter     | O  |    |    |    |    |
-|      덧칠하기       |           PaintOver           | O  |    |    |    |    |
-| 또의 최고 순위와 최저 순위 | LottoHighestAndLowestRankings |    | O  |    |    |    |
+|       문제명        |              영문               | 로이 | 코어 | 버디 | 하나 | 뭉남 | 
+|:----------------:|:-----------------------------:|:--:|:--:|:--:|:--:|:--:|
+|      옹알이(2)      |          Babbling_2           | O  | O  | O  | O  | O  |
+|     기사단원의 무기     |        WeaponOfKnight         | O  |    | O  |    | O  |
+|    문자열 다루기 기본    |     BasicStringValidator      |    |    |    | O  |    |
+|    명예의 전당 (1)    |         HallOfFame_1          | O  |    |    |    |    |
+|     문자열 나누기      |          StringSplit          | O  |    |    |    | O  |
+|    완주하지 못한 선수    |   ARunnerWhoFailedToFinish    |    | O  |    |    |    |
+|      약수의 합       |         SumOfDivisors         |    |    |    | O  |    |
+|      평균 구하기      |       AverageCalculator       |    |    |    | O  |    |
+|      짝수와 홀수      |          EvenAndOdd           |    |    |    | O  |    |
+|   크기가 작은 부분문자열   |        SmallSubstring         | O  |    |    |    |    |
+|      둘만의 암호      |         SecretBetween         |    |    |    |    | O  |
+|      추억 점수       |          MemoryScore          | O  |    |    |    | O  |
+|     대충 만든 자판     |      ImprovisedKeyboard       | O  |    |    |    | O  |
+|   가장 가까운 같은 글자   |    NearestIdenticalLetter     | O  |    |    |    |    |
+|       덧칠하기       |           PaintOver           | O  |    |    |    |    |
+| 로또의 최고 순위와 최저 순위 | LottoHighestAndLowestRankings |    | O  |    |    |    |
+|      달리기 경주      |          RunningRace          | O  |    |    |    |    |
 
 #### level 2
 
