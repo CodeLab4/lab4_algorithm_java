@@ -14,9 +14,9 @@ public class WeaponOfKnight_roy {
 
         for (int i = 1; i <= number; i++) {
             for (int j = 1; j * j <= i; j++) {
-                if(j * j == i) {
+                if (j * j == i) {
                     divisorArr[i]++;
-                } else if(i % j == 0) {
+                } else if (i % j == 0) {
                     divisorArr[i] += 2;
                 }
             }

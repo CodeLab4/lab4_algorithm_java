@@ -17,7 +17,7 @@ public class Babbling_2_roy {
                     j = -1;
                 }
             }
-            if(temp.equals("")) {
+            if (temp.equals("")) {
                 answer++;
             }
         }
