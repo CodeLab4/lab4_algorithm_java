@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RunningRace_roy {
+    // 풀이 환경 : 프로그래머스 (IDE x)
+    // 풀이 시간 : 42분
+    // 공식 문서 참조(O)
     public String[] solution(String[] players, String[] callings) {
         String[] answer = {};
         Map<String, Integer> map = new HashMap<>();
