@@ -39,6 +39,7 @@ _### 프로그래머스 제목_
 | 가장 가까운 같은 글자 |  NearestIdenticalLetter  | O  |    |    |    |    |
 |    추억 점수     |       MemoryScore        | O  |    |    |    |    |
 |     덧칠하기     |        PaintOver         | O  |    |    |    |    |
+|  또의 최고 순위와 최저 순위  | LottoHighestAndLowestRankings  |   |  O  |    |    |    |
 
 #### level 2
 
