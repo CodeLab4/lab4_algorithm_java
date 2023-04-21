@@ -34,10 +34,9 @@ _### 프로그래머스 제목_
 |     짝수와 홀수      |          EvenAndOdd           |    |    |    | O  |    |
 |  크기가 작은 부분문자열   |        SmallSubstring         | O  |    |    |    |    |
 |     둘만의 암호      |         SecretBetween         |    |    |    |    | O  |
-|      추억 점수      |          MemoryScore          |    |    |    |    | O  |
+|      추억 점수      |          MemoryScore          | O  |    |    |    | O  |
 |    대충 만든 자판     |      ImprovisedKeyboard       | O  |    |    |    | O  |
 |  가장 가까운 같은 글자   |    NearestIdenticalLetter     | O  |    |    |    |    |
-|      추억 점수      |          MemoryScore          | O  |    |    |    |    |
 |      덧칠하기       |           PaintOver           | O  |    |    |    |    |
 | 또의 최고 순위와 최저 순위 | LottoHighestAndLowestRankings |    | O  |    |    |    |
 
