@@ -41,8 +41,8 @@ _### 프로그래머스 제목_
 |       덧칠하기       |           PaintOver           | O  |    |    |    |    |
 | 로또의 최고 순위와 최저 순위 | LottoHighestAndLowestRankings |    | O  |    |    |    |
 |       삼총사        |             Trio              |    | O  |    |    |    |
+|      달리기 경주      |          RunningRace          | O  |    |    |    |    |
 |    푸드 파이트 대회     |       AFoodFightContest       |    | O  |    |    |    |
-|      숫자 짝꿍       |         NumberPartner         |    | O  |    |    |    |
 
 #### level 2
 
