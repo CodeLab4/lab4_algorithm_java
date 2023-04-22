@@ -43,6 +43,7 @@ _### 프로그래머스 제목_
 |       삼총사        |             Trio              |    | O  |    |    |    |
 |      달리기 경주      |          RunningRace          | O  |    |    |    |    |
 |    푸드 파이트 대회     |       AFoodFightContest       |    | O  |    |    |    |
+|      숫자 짝꿍       |         NumberPartner         |    | O  |    |    |    |
 
 #### level 2
 
