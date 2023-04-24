@@ -1,4 +1,4 @@
-# lab4_algorithm
+# :sparkles: 알고리즘을 Java로 푸는 저장소
 
 ## 👊 문제 푼 뒤 커밋 메시지 컨벤션
 
