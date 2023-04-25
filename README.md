@@ -45,6 +45,7 @@ _### 프로그래머스 제목_
 |    푸드 파이트 대회     |              AFoodFightContest              |    | O  |    |    |    |
 |      숫자 짝꿍       |                NumberPartner                | O  | O  |    |    | O  |
 |   개인정보 수집 유효기간   | PersonalInformationCollectionValidityPeriod | O  |    |    |    |    |
+|      과일 장수       |                AFruitSeller                 |    | O  |    |    |    |
 
 #### level 2
 
