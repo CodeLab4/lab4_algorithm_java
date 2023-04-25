@@ -46,6 +46,7 @@ _### 프로그래머스 제목_
 |      숫자 짝꿍       |                NumberPartner                | O  | O  |    |    | O  |
 |   개인정보 수집 유효기간   | PersonalInformationCollectionValidityPeriod | O  |    |    |    |    |
 |      과일 장수       |                AFruitSeller                 |    | O  |    |    |    |
+|     바탕화면 정리      |               DesktopCleanup                | O  |    |    |    |    |
 
 #### level 2
 

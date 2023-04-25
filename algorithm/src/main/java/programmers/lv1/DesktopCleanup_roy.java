@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DesktopCleanup_roy {
+    // 풀이시간 : 1시간
     public int[] solution(String[] wallpaper) {
         int[] answer = new int[4];
         String[][] arr = new String[wallpaper.length][wallpaper[0].length()];
