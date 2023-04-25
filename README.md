@@ -44,6 +44,7 @@ _### 프로그래머스 제목_
 |      달리기 경주      |          RunningRace          | O  |    |    |    |    |
 |    푸드 파이트 대회     |       AFoodFightContest       |    | O  |    |    |    |
 |      숫자 짝꿍       |         NumberPartner         | O  | O  |    |    |    |
+|     바탕화면 정리      |        DesktopCleanup         | O  |    |    |    |    |
 
 #### level 2
 
