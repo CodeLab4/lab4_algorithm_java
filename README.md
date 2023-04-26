@@ -26,7 +26,7 @@ _### 프로그래머스 제목_
 |      옹알이(2)      |                 Babbling_2                  | O  | O  | O  | O  | O  |
 |     기사단원의 무기     |               WeaponOfKnight                | O  | O  | O  |    | O  |
 |    문자열 다루기 기본    |            BasicStringValidator             |    | O  |    | O  |    |
-|    명예의 전당 (1)    |                HallOfFame_1                 | O  |    |    |    |    |
+|    명예의 전당 (1)    |                HallOfFame_1                 | O  | O  |    |    |    |
 |     문자열 나누기      |                 StringSplit                 | O  |    |    |    | O  |
 |    완주하지 못한 선수    |          ARunnerWhoFailedToFinish           |    | O  |    |    |    |
 |      약수의 합       |                SumOfDivisors                |    |    |    | O  |    |
