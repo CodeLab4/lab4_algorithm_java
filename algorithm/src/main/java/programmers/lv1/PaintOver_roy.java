@@ -6,7 +6,7 @@ public class PaintOver_roy {
         int maxIdx = 0;
 
         for (int i : section) {
-            if(maxIdx <= i) {
+            if (maxIdx <= i) {
                 maxIdx = i + m;
                 answer++;
             }

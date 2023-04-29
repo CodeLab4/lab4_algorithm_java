@@ -1,7 +1,9 @@
 package baekjoon.gold.gold5;
 
 import java.io.*;
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class B7576_mungnam {
 

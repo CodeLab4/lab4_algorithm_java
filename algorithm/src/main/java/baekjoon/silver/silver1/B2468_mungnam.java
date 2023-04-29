@@ -42,7 +42,7 @@ public class B2468_mungnam {
             safeAreaCount = 0;
             for (int j = 0; j < territory.length; j++) {
                 for (int k = 0; k < territory[j].length; k++) {
-                    if (territory[j][k]>comparisonHeight && !visited[j][k]) {
+                    if (territory[j][k] > comparisonHeight && !visited[j][k]) {
                         bfs(j, k);
                         safeAreaCount++;
                     }

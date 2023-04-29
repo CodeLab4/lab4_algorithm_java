@@ -11,11 +11,11 @@ public class RunningRace_roy {
         String[] answer = {};
         Map<String, Integer> map = new HashMap<>();
 
-        for(int i=0; i < players.length; i++) {
+        for (int i = 0; i < players.length; i++) {
             map.put(players[i], i);
         }
 
-        for(int i = 0; i < callings.length; i++) {
+        for (int i = 0; i < callings.length; i++) {
             int idx = map.get(callings[i]);
             map.replace(players[idx - 1], map.get(players[idx - 1]) + 1);
             map.replace(players[idx], map.get(players[idx]) - 1);

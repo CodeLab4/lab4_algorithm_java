@@ -1,6 +1,6 @@
 package programmers.lv1;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class AFruitSeller_Core {
     public static void main(String[] args) {

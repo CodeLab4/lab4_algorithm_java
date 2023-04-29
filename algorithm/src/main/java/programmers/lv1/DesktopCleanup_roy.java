@@ -11,11 +11,11 @@ public class DesktopCleanup_roy {
         int wallCnt = 0;
 
         // wallpaper 2차원 배열로 만들기
-        for(int i = 0; i < wallpaper.length; i++) {
+        for (int i = 0; i < wallpaper.length; i++) {
             String[] temp = wallpaper[i].split("");
-            for(int j = 0; j < wallpaper[0].length(); j++) {
+            for (int j = 0; j < wallpaper[0].length(); j++) {
                 arr[i][j] = temp[j];
-                if(temp[j].equals("#")) {
+                if (temp[j].equals("#")) {
                     wallCnt++;
                 }
             }
@@ -26,15 +26,15 @@ public class DesktopCleanup_roy {
 
         // 행 탐색
         int rowCnt = 0;
-        for(int i = 0; i < arr.length; i++) {
-            for(int j = 0; j < arr[i].length; j++) {
-                if(arr[i][j].equals("#")) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j].equals("#")) {
                     rowCnt++;
                 }
-                if(rowList.isEmpty() && arr[i][j].equals("#")) {
+                if (rowList.isEmpty() && arr[i][j].equals("#")) {
                     rowList.add(i);
                 }
-                if(arr[i][j].equals("#") && rowCnt == wallCnt) {
+                if (arr[i][j].equals("#") && rowCnt == wallCnt) {
                     rowList.add(i + 1);
                 }
             }
@@ -42,15 +42,15 @@ public class DesktopCleanup_roy {
 
         // 열 탐색
         int columnCnt = 0;
-        for(int i = 0; i < arr[0].length; i++) {
-            for(int j = 0; j < arr.length; j++) {
-                if(arr[j][i].equals("#")) {
+        for (int i = 0; i < arr[0].length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[j][i].equals("#")) {
                     columnCnt++;
                 }
-                if(columnList.isEmpty() && arr[j][i].equals("#")) {
+                if (columnList.isEmpty() && arr[j][i].equals("#")) {
                     columnList.add(i);
                 }
-                if(arr[j][i].equals("#") && columnCnt == wallCnt) {
+                if (arr[j][i].equals("#") && columnCnt == wallCnt) {
                     columnList.add(i + 1);
                 }
             }

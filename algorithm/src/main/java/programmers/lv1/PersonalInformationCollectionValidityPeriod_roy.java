@@ -48,10 +48,6 @@ public class PersonalInformationCollectionValidityPeriod_roy {
         int todayResult = todaySplit[0] * 12 * 28 + todaySplit[1] * 28 + todaySplit[2];
         int dateResult = dateSplit[0] * 12 * 28 + dateSplit[1] * 28 + dateSplit[2];
 
-        if (dateResult >= todayResult) {
-            return false;
-        }
-
-        return true;
+        return dateResult < todayResult;
     }
 }

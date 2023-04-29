@@ -10,8 +10,8 @@ public class NearestIdenticalLetter_roy {
 
         String[] temp = s.split("");
 
-        for(int i=0; i < temp.length; i++) {
-            if(map.get(temp[i]) == null) {
+        for (int i = 0; i < temp.length; i++) {
+            if (map.get(temp[i]) == null) {
                 map.put(temp[i], i);
                 answer[i] = -1;
                 continue;

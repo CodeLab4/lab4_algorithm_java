@@ -1,7 +1,7 @@
 package programmers.lv1;
 
-import java.util.HashMap;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 public class MemoryScore_mungnam {

@@ -35,31 +35,31 @@ public class SecretBetween_mungnam {
         boolean flag;
 
         int[] skipAscii = new int[skip.length()];
-        for(int i=0; i<skipAscii.length; i++) {
-            skipAscii[i]=(int)skip.charAt(i);
+        for (int i = 0; i < skipAscii.length; i++) {
+            skipAscii[i] = skip.charAt(i);
         }       // skip 문자열의 문자들을 아스키 코드 배열로 생성
 
-        for(int i=0; i<s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             target = s.charAt(i);       // 문자열 s에서 글자 하나를 선택
             targetAscii = target;       // target의 아스키 코드 값
-            for(int j=0; j<index; j++) {
+            for (int j = 0; j < index; j++) {
                 flag = true;
                 targetAscii++;
-                if(targetAscii>'z') {       // 알파벳 z를 초과 시 -> 다시 a로
+                if (targetAscii > 'z') {       // 알파벳 z를 초과 시 -> 다시 a로
                     targetAscii = 'a';
                 }
-                for(int k=0; k<skipAscii.length; k++) {
-                    if(targetAscii==skipAscii[k]) {
+                for (int k = 0; k < skipAscii.length; k++) {
+                    if (targetAscii == skipAscii[k]) {
                         j--;
                         flag = false;
                         break;
                     }
                 }
-                if(!flag) {
+                if (!flag) {
                     continue;
                 }
             }
-            answer+=(char)targetAscii;
+            answer += (char) targetAscii;
         }
         return answer;
     }

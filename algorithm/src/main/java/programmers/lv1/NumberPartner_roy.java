@@ -27,7 +27,7 @@ public class NumberPartner_roy {
         if (answer.equals("")) {
             answer = "-1";
         }
-        if(answer.startsWith("0")) {
+        if (answer.startsWith("0")) {
             answer = "0";
         }
         return answer;

@@ -22,7 +22,7 @@ public class SecretBetween_Core {
                     ch = 'a';
                 }
 
-                for (int j = 0; j < skipAsciis.length;) {
+                for (int j = 0; j < skipAsciis.length; ) {
                     if (ch == skipAsciis[j]) {
                         ch++;
 

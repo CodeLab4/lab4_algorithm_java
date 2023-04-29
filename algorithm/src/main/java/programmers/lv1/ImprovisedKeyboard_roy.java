@@ -8,20 +8,20 @@ public class ImprovisedKeyboard_roy {
     public int[] solution(String[] keymap, String[] targets) {
         int[] answer = new int[targets.length];
 
-        for(int i=0; i < targets.length; i++) {
+        for (int i = 0; i < targets.length; i++) {
             boolean flag = false;
             String[] targetSplit = targets[i].split("");
             int sum = 0;
-            for(int j=0; j < targetSplit.length; j++) {
+            for (int j = 0; j < targetSplit.length; j++) {
                 int result = search(keymap, targetSplit[j]);
-                if(result == -1) {
+                if (result == -1) {
                     answer[i] = -1;
                     flag = true;
                     break;
                 }
                 sum += result;
             }
-            if(!flag) {
+            if (!flag) {
                 answer[i] = sum;
             }
         }
@@ -31,16 +31,16 @@ public class ImprovisedKeyboard_roy {
     public int search(String[] keymap, String target) {
         List<Integer> list = new ArrayList<>();
 
-        for(int i=0; i < keymap.length; i++) {
+        for (int i = 0; i < keymap.length; i++) {
             String[] keymapSplit = keymap[i].split("");
-            for(int j=0; j < keymapSplit.length; j++) {
-                if(keymapSplit[j].equals(target)) {
+            for (int j = 0; j < keymapSplit.length; j++) {
+                if (keymapSplit[j].equals(target)) {
                     list.add(j + 1);
                     break;
                 }
             }
         }
-        if(list.isEmpty()) {
+        if (list.isEmpty()) {
             return -1;
         }
         return Collections.min(list);
