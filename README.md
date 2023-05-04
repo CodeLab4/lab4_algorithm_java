@@ -68,5 +68,6 @@ _### 프로그래머스 제목_
 |     숫자의 표현     |       NumberExpression        |    |    | O  |    |    |
 |    다음 큰 숫자     |         NextBigNumber         |    |    | O  |    |    |
 | 연속 부분 수열 합의 개수 | SumsOfConsecutiveSubsequences | O  |    |    |    |    |
+|  뒤에 있는 큰 수 찾기  |    FindTheNextLargeNumber     | O  |    |    |    |    |
 
   
