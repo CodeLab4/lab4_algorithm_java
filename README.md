@@ -72,5 +72,6 @@ _### 프로그래머스 제목_
 |    숫자 변환하기     |       NumberConversion        | O  |    |    |    |    |
 |    롤케이크 자르기    |        RollCakeCutting        | O  |    |    |    |    |
 |      택배상자      |          CourierBox           | O  |    |    |    |    |
+|   이모티콘 할인행사    |     EmoticonDiscountEvent     | O  |    |    |    |    |
 
   
