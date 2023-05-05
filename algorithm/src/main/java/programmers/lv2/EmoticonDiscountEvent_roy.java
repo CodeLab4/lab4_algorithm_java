@@ -50,9 +50,6 @@ public class EmoticonDiscountEvent_roy {
             cnt++;
             result.add(new int[]{userPlus, userSum});
         }
-        for (int i = 0; i < result.size(); i++) {
-            System.out.println(Arrays.toString(result.get(i)));
-        }
 
         result.sort((o1, o2) -> {
             if (o1[0] == o2[0]) {
