@@ -17,14 +17,14 @@ public class SumOfConsecutiveSubsequences_roy {
         int end = 0;
         int sum = 0;
 
-        while(start < sequence.length) {
-            if(sum > k || end == sequence.length) {
+        while (start < sequence.length) {
+            if (sum > k || end == sequence.length) {
                 sum -= sequence[start++];
             } else {
                 sum += sequence[end++];
             }
 
-            if(sum == k) {
+            if (sum == k) {
                 list.add(new int[]{start, end - 1});
             }
         }
@@ -32,7 +32,7 @@ public class SumOfConsecutiveSubsequences_roy {
         list.sort((o1, o2) -> {
             int size1 = o1[1] - o1[0];
             int size2 = o2[1] - o2[0];
-            if(size1 == size2) {
+            if (size1 == size2) {
                 return o1[0] - o2[0];
             } else {
                 return size1 - size2;

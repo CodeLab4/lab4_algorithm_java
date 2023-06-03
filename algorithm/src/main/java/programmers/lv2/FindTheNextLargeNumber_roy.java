@@ -9,13 +9,13 @@ public class FindTheNextLargeNumber_roy {
 
         for (int i = numbers.length - 1; i >= 0; i--) {
             while (!stack.isEmpty()) {
-                if(stack.peek() > numbers[i]) {
+                if (stack.peek() > numbers[i]) {
                     answer[i] = stack.peek();
                     break;
                 }
                 stack.pop();
             }
-            if(stack.isEmpty()) {
+            if (stack.isEmpty()) {
                 answer[i] = -1;
             }
             stack.add(numbers[i]);

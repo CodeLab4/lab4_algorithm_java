@@ -1,6 +1,9 @@
 package programmers.lv2;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
 public class NumberConversion_roy {
     public static void main(String[] args) {
@@ -20,24 +23,24 @@ public class NumberConversion_roy {
 
         queue.add(x);
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             int size = queue.size();
-            for(int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++) {
                 int temp = queue.poll();
 
-                if(temp == y) {
+                if (temp == y) {
                     return depth;
                 }
 
-                if(temp * 2 <= y && !set.contains(temp * 2)) {
+                if (temp * 2 <= y && !set.contains(temp * 2)) {
                     queue.add(temp * 2);
                     set.add(temp * 2);
                 }
-                if(temp * 2 <= y && !set.contains(temp * 3)) {
+                if (temp * 2 <= y && !set.contains(temp * 3)) {
                     queue.add(temp * 3);
                     set.add(temp * 3);
                 }
-                if(temp * 2 <= y && !set.contains(temp + n)) {
+                if (temp * 2 <= y && !set.contains(temp + n)) {
                     queue.add(temp + n);
                     set.add(temp + n);
                 }

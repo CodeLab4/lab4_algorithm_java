@@ -1,6 +1,6 @@
 package programmers.lv1;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * 프로그래머스 문자열 내림차순으로 배치하기

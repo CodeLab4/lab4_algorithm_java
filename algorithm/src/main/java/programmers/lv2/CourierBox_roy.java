@@ -6,22 +6,23 @@ import java.util.Stack;
 
 public class CourierBox_roy {
     public static void main(String[] args) {
-        System.out.println(solution(new int[]{5,4,3,2,1}));
+        System.out.println(solution(new int[]{5, 4, 3, 2, 1}));
     }
+
     public static int solution(int[] order) {
         int answer = 0;
         Stack<Integer> stack = new Stack<>();
         Queue<Integer> queue = new LinkedList<>();
 
-        for(int i = 1; i <= order.length; i++) {
+        for (int i = 1; i <= order.length; i++) {
             queue.add(i);
         }
 
         int i = 0;
 
-        while(true) {
+        while (true) {
             boolean flag = false;
-            if(!queue.isEmpty() && order[i] == queue.peek()) {
+            if (!queue.isEmpty() && order[i] == queue.peek()) {
                 queue.poll();
                 answer++;
                 i++;
@@ -29,7 +30,7 @@ public class CourierBox_roy {
                 continue;
             }
 
-            if(!stack.isEmpty() && order[i] == stack.peek()) {
+            if (!stack.isEmpty() && order[i] == stack.peek()) {
                 stack.pop();
                 answer++;
                 i++;
@@ -37,12 +38,12 @@ public class CourierBox_roy {
                 continue;
             }
 
-            if(!queue.isEmpty()) {
+            if (!queue.isEmpty()) {
                 stack.add(queue.poll());
                 flag = true;
             }
 
-            if(!flag) {
+            if (!flag) {
                 break;
             }
         }
