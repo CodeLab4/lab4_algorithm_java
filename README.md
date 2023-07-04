@@ -76,5 +76,6 @@ _### 프로그래머스 제목_
 |      택배상자      |          CourierBox           | O  |    |    |    |    |
 |   이모티콘 할인행사    |     EmoticonDiscountEvent     | O  |    |    |    |    |
 |  연속된 부분 수열의 합  | SumOfConsecutiveSubsequences  | O  |    |    |    |    |
+|      점찍기       |            Dotted             | O  |    |    |    |    |
 
   
