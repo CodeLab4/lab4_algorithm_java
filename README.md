@@ -77,5 +77,6 @@ _### 프로그래머스 제목_
 |   이모티콘 할인행사    |     EmoticonDiscountEvent     | O  |    |    |    |    |
 |  연속된 부분 수열의 합  | SumOfConsecutiveSubsequences  | O  |    |    |    |    |
 |      점찍기       |            Dotted             | O  |    |    |    |    |
+|    우박수열 정적분    | HailSequenceDefiniteIntegral  | O  |    |    |    |    |
 
   
