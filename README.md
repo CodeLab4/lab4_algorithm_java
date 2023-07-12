@@ -79,5 +79,6 @@ _### 프로그래머스 제목_
 |      점찍기       |            Dotted             | O  |    |    |    |    |
 |    우박수열 정적분    | HailSequenceDefiniteIntegral  | O  |    |    |    |    |
 |     호텔 대실      |       RentingHotelRoom        | O  |    |    |    |    |
+|   마법의 엘리베이터    |       MagicElevator_roy       | O  |    |    |    |    |
 
   
