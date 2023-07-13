@@ -9,119 +9,118 @@ import java.util.StringTokenizer;
 
 public class B2646_Birdie {
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int people = Integer.parseInt(br.readLine());
-        Graph graph = new Graph(people);
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int people = Integer.parseInt(br.readLine());
+		Graph graph = new Graph(people);
 
-        int answer = 0;
+		int answer = 0;
 
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-        int from = Integer.parseInt(st.nextToken());
-        int to = Integer.parseInt(st.nextToken());
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		int from = Integer.parseInt(st.nextToken());
+		int to = Integer.parseInt(st.nextToken());
 
-        int cycle = Integer.parseInt(br.readLine());
+		int cycle = Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < cycle; i++) {
-            StringTokenizer tmp = new StringTokenizer(br.readLine(), " ");
-            int i1 = Integer.parseInt(tmp.nextToken());
-            int i2 = Integer.parseInt(tmp.nextToken());
+		for (int i = 0; i < cycle; i++) {
+			StringTokenizer tmp = new StringTokenizer(br.readLine(), " ");
+			int i1 = Integer.parseInt(tmp.nextToken());
+			int i2 = Integer.parseInt(tmp.nextToken());
 
-            graph.addEdge(i1, i2);
-        }
+			graph.addEdge(i1, i2);
+		}
 
-        Graph.Node root = graph.nodes[from - 1];
-        int i = graph.dfsRecursion(root, to, answer);
+		Graph.Node root = graph.nodes[from - 1];
+		int i = graph.dfsRecursion(root, to, answer);
 
-        if (i == 0) {
-            System.out.println(-1);
-        } else {
-            System.out.println(i);
-        }
-    }
+		if (i == 0) {
+			System.out.println(-1);
+		} else {
+			System.out.println(i);
+		}
+	}
 
+	static class Graph {
+		Node[] nodes;
 
-    static class Graph {
-        class Node {
-            int data;
-            boolean marked;
-            LinkedList<Node> adjacent;
+		Graph(int size) {
+			nodes = new Node[size];
 
-            Node(int data) {
-                this.data = data;
-                this.marked = false;
-                this.adjacent = new LinkedList<>();
-            }
-        }
+			for (int i = 1; i <= size; i++) {
+				nodes[i - 1] = new Node(i);
+			}
+		}
 
-        Node[] nodes;
+		void addEdge(int i1, int i2) {
+			Node node1 = nodes[i1 - 1];
+			Node node2 = nodes[i2 - 1];
 
-        Graph(int size) {
-            nodes = new Node[size];
+			if (!node1.adjacent.contains(node2)) {
+				node1.adjacent.add(node2);
+			}
+			if (!node2.adjacent.contains(node1)) {
+				node2.adjacent.add(node1);
+			}
+		}
 
-            for (int i = 1; i <= size; i++) {
-                nodes[i - 1] = new Node(i);
-            }
-        }
+		int dfs(int from, int to) {
+			Node root = nodes[from];
+			root.marked = true;
+			int count = 0;
 
-        void addEdge(int i1, int i2) {
-            Node node1 = nodes[i1 - 1];
-            Node node2 = nodes[i2 - 1];
+			Stack<Node> stack = new Stack<>();
+			stack.push(root);
 
-            if (!node1.adjacent.contains(node2)) {
-                node1.adjacent.add(node2);
-            }
-            if (!node2.adjacent.contains(node1)) {
-                node2.adjacent.add(node1);
-            }
-        }
+			while (!stack.isEmpty()) {
+				Node pop = stack.pop();
 
-        int dfs(int from, int to) {
-            Node root = nodes[from];
-            root.marked = true;
-            int count = 0;
+				for (Node n : pop.adjacent) {
+					if (!n.marked) {
+						n.marked = true;
+						stack.push(n);
+						count++;
+						if (n.data == to) {
+							return count;
+						}
+					}
+				}
+				count--;
+			}
 
-            Stack<Node> stack = new Stack<>();
-            stack.push(root);
+			return -1;
+		}
 
-            while (!stack.isEmpty()) {
-                Node pop = stack.pop();
+		int dfsRecursion(Node node, int to, int count) {
+			if (node.data == to) {
+				//                System.out.println(count);
+				count += count;
+				return count;
+			}
+			if (node == null) {
+				return count;
+			}
 
-                for (Node n : pop.adjacent) {
-                    if (!n.marked) {
-                        n.marked = true;
-                        stack.push(n);
-                        count++;
-                        if (n.data == to) {
-                            return count;
-                        }
-                    }
-                }
-                count--;
-            }
+			count++;
+			node.marked = true;
+			for (Node n : node.adjacent) {
+				if (!n.marked) {
+					count = dfsRecursion(n, to, count);
+				}
+			}
+			return --count;
+		}
 
-            return -1;
-        }
+		class Node {
+			int data;
+			boolean marked;
+			LinkedList<Node> adjacent;
 
-        int dfsRecursion(Node node, int to, int count) {
-            if (node.data == to) {
-//                System.out.println(count);
-                count += count;
-                return count;
-            }
-            if (node == null) {
-                return count;
-            }
+			Node(int data) {
+				this.data = data;
+				this.marked = false;
+				this.adjacent = new LinkedList<>();
+			}
+		}
 
-            count++;
-            node.marked = true;
-            for (Node n : node.adjacent) {
-                if (!n.marked) {
-                    count = dfsRecursion(n, to, count);
-                }
-            }
-            return --count;
-        }
-
-    }
+	}
 }

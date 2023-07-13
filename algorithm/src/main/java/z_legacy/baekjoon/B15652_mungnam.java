@@ -1,46 +1,50 @@
 package z_legacy.baekjoon;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class B15652_mungnam {
 
-    private static int N, M;
-    private static int[] array;
-    private static final StringBuilder stringBuilder = new StringBuilder();
+	private static final StringBuilder stringBuilder = new StringBuilder();
+	private static int N, M;
+	private static int[] array;
 
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
 
-        N = Integer.parseInt(stringTokenizer.nextToken());
-        M = Integer.parseInt(stringTokenizer.nextToken());
-        array = new int[M];
+		N = Integer.parseInt(stringTokenizer.nextToken());
+		M = Integer.parseInt(stringTokenizer.nextToken());
+		array = new int[M];
 
-        dfs(0, 0);
+		dfs(0, 0);
 
-        bw.write(stringBuilder.toString());
-        bw.newLine();
+		bw.write(stringBuilder.toString());
+		bw.newLine();
 
-        bw.flush();
-        bw.close();
-    }
+		bw.flush();
+		bw.close();
+	}
 
-    private static void dfs(int depth, int start) {
+	private static void dfs(int depth, int start) {
 
-        if (depth == M) {
-            for (int i = 0; i < array.length; i++) {
-                stringBuilder.append(array[i] + " ");
-            }
-            stringBuilder.append("\n");
-            return;
-        }
+		if (depth == M) {
+			for (int i = 0; i < array.length; i++) {
+				stringBuilder.append(array[i] + " ");
+			}
+			stringBuilder.append("\n");
+			return;
+		}
 
-        for (int i = start; i < N; i++) {
-            array[depth] = i + 1;
-            dfs(depth + 1, i);
-        }
-    }
+		for (int i = start; i < N; i++) {
+			array[depth] = i + 1;
+			dfs(depth + 1, i);
+		}
+	}
 }

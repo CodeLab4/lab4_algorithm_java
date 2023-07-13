@@ -9,9 +9,9 @@ public class Dotted_roy {
 		answer += (d / k) * 2L;
 
 		// x, y가 0이 아닐경우 나올수 있는 점의 개수
-		for(int i = 1; i * k <= d; i++) {
+		for (int i = 1; i * k <= d; i++) {
 			int n = i * k;
-			answer += (int) Math.sqrt(Math.pow(d, 2) - Math.pow(n, 2)) / k;
+			answer += (int)Math.sqrt(Math.pow(d, 2) - Math.pow(n, 2)) / k;
 		}
 
 		return answer;

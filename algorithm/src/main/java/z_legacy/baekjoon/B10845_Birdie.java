@@ -8,63 +8,62 @@ import java.util.Queue;
 
 public class B10845_Birdie {
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        Queue<String> queue = new LinkedList();
+		Queue<String> queue = new LinkedList();
 
-        int cycle = Integer.parseInt(br.readLine());
+		int cycle = Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < cycle; i++) {
-            String input = br.readLine();
-            String[] tmp = input.split(" ");
+		for (int i = 0; i < cycle; i++) {
+			String input = br.readLine();
+			String[] tmp = input.split(" ");
 
-            String command = tmp[0];
+			String command = tmp[0];
 
-            if (command.equals("push")) {
-                queue.offer(tmp[1]);
-            } else if (command.equals("front")) {
+			if (command.equals("push")) {
+				queue.offer(tmp[1]);
+			} else if (command.equals("front")) {
 
-                if (queue.size() > 0) {
-                    System.out.println(queue.peek());
-                } else {
-                    System.out.println(-1);
-                }
+				if (queue.size() > 0) {
+					System.out.println(queue.peek());
+				} else {
+					System.out.println(-1);
+				}
 
-            } else if (command.equals("pop")) {
-                if (queue.size() > 0) {
-                    System.out.println(queue.poll());
-                } else {
-                    System.out.println(-1);
-                }
+			} else if (command.equals("pop")) {
+				if (queue.size() > 0) {
+					System.out.println(queue.poll());
+				} else {
+					System.out.println(-1);
+				}
 
+			} else if (command.equals("size")) {
+				System.out.println(queue.size());
 
-            } else if (command.equals("size")) {
-                System.out.println(queue.size());
+			} else if (command.equals("empty")) {
 
-            } else if (command.equals("empty")) {
+				if (queue.size() == 0) {
+					System.out.println(1);
+				} else {
+					System.out.println(0);
+				}
 
-                if (queue.size() == 0) {
-                    System.out.println(1);
-                } else {
-                    System.out.println(0);
-                }
+			} else if (command.equals("back")) {
 
-            } else if (command.equals("back")) {
+				if (queue.size() > 0) {
 
-                if (queue.size() > 0) {
+					for (int j = 0; j < queue.size() - 1; j++) {
+						queue.offer(queue.poll());
+					}
+					String poll = queue.poll();
+					System.out.println(poll);
+					queue.offer(poll);
+				} else {
+					System.out.println(-1);
+				}
+			}
+		}
 
-                    for (int j = 0; j < queue.size() - 1; j++) {
-                        queue.offer(queue.poll());
-                    }
-                    String poll = queue.poll();
-                    System.out.println(poll);
-                    queue.offer(poll);
-                } else {
-                    System.out.println(-1);
-                }
-            }
-        }
-
-    }
+	}
 }

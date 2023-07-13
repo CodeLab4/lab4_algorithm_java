@@ -12,8 +12,8 @@ public class HailSequenceDefiniteIntegral_roy {
 		list.add(k);
 
 		// 콜라스 추측 나머지 구하기
-		while(k > 1) {
-			if(k % 2 == 0) {
+		while (k > 1) {
+			if (k % 2 == 0) {
 				k /= 2;
 			} else {
 				k = k * 3 + 1;
@@ -22,19 +22,19 @@ public class HailSequenceDefiniteIntegral_roy {
 		}
 
 		// 정적분 범위 구하기
-		for(int i = 0; i < ranges.length; i++) {
+		for (int i = 0; i < ranges.length; i++) {
 			int start = ranges[i][0];
 			int end = list.size() - 1 + ranges[i][1];
 
 			// 시작 범위가 끝 범위 보다 크다면
-			if(start > end) {
+			if (start > end) {
 				answer[i] = -1;
 				continue;
 			}
 
 			// 시작 범위부터 x를 1씩 증가시키며 사다리꼴 넒이 구하기
 			double sum = 0;
-			for(int j = start; j < end; j++) {
+			for (int j = start; j < end; j++) {
 				double now = list.get(j);
 				double target = list.get(j + 1);
 				sum += (now + target) / 2;

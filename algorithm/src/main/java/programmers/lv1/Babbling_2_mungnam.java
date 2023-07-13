@@ -6,51 +6,51 @@ import java.io.OutputStreamWriter;
 
 public class Babbling_2_mungnam {
 
-    /**
-     * 오랜만에 시간을 재면서 푼 문제였다.
-     * 며칠 전 WAS 프로젝트에서 본 문자열 .startsWith() 메서드를 써봤다.
-     * 생각보다 간단히 풀린 문제였다.
-     */
+	/**
+	 * 오랜만에 시간을 재면서 푼 문제였다.
+	 * 며칠 전 WAS 프로젝트에서 본 문자열 .startsWith() 메서드를 써봤다.
+	 * 생각보다 간단히 풀린 문제였다.
+	 */
 
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
+		String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
 
-        int result = solution(babbling);
+		int result = solution(babbling);
 
-        bw.write(Integer.toString(result));
-        bw.newLine();
+		bw.write(Integer.toString(result));
+		bw.newLine();
 
-        bw.flush();
-        bw.close();
-    }
+		bw.flush();
+		bw.close();
+	}
 
-    public static int solution(String[] babbling) {
+	public static int solution(String[] babbling) {
 
-        int result = 0;
+		int result = 0;
 
-        String[] canBabble = {"aya", "ye", "woo", "ma"};
+		String[] canBabble = {"aya", "ye", "woo", "ma"};
 
-        for (int i = 0; i < babbling.length; i++) {
-            int canBabbleIndex = -1;     // 같은 발음을 연속해서 할 수 없으므로 마지막으로 한 발음 체크 인덱스
-            String word = babbling[i];      // 발음해야 할 단어
-            for (int j = 0; j < canBabble.length; j++) {
-                if (j == canBabbleIndex) {      // 마지막으로 한 발음이면 continue
-                    continue;
-                }
-                if (word.startsWith(canBabble[j])) {        // 발음해야 할 단어가 canBabble의 원소로 시작 하는지 확인
-                    word = word.substring(canBabble[j].length());
-                    canBabbleIndex = j;
-                    j = -1;
-                }
-            }
-            if (word.equals("")) {
-                result++;
-            }
-        }
+		for (int i = 0; i < babbling.length; i++) {
+			int canBabbleIndex = -1;     // 같은 발음을 연속해서 할 수 없으므로 마지막으로 한 발음 체크 인덱스
+			String word = babbling[i];      // 발음해야 할 단어
+			for (int j = 0; j < canBabble.length; j++) {
+				if (j == canBabbleIndex) {      // 마지막으로 한 발음이면 continue
+					continue;
+				}
+				if (word.startsWith(canBabble[j])) {        // 발음해야 할 단어가 canBabble의 원소로 시작 하는지 확인
+					word = word.substring(canBabble[j].length());
+					canBabbleIndex = j;
+					j = -1;
+				}
+			}
+			if (word.equals("")) {
+				result++;
+			}
+		}
 
-        return result;
-    }
+		return result;
+	}
 }
