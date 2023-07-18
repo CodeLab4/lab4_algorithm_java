@@ -1,50 +1,54 @@
 package z_legacy.baekjoon;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class B1463_mungnam {
 
-    private static long[] array;
+	private static long[] array;
 
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int X = Integer.parseInt(br.readLine());
+		int X = Integer.parseInt(br.readLine());
 
-        array = new long[X + 1];
+		array = new long[X + 1];
 
-        long result = dynamicProgramming(X);
+		long result = dynamicProgramming(X);
 
-        bw.write(Long.toString(result));
-        bw.newLine();
+		bw.write(Long.toString(result));
+		bw.newLine();
 
-        bw.flush();
-        bw.close();
-    }
+		bw.flush();
+		bw.close();
+	}
 
-    private static long dynamicProgramming(int X) {
+	private static long dynamicProgramming(int X) {
 
-        array[1] = 0;
-        if (array.length > 2) {
-            for (int i = 2; i < array.length; i++) {
-                if (i % 2 == 0 || i % 3 == 0) {
-                    if (i % 2 == 0) {
-                        array[i] = Math.min(array[i / 2], array[i - 1]) + 1;
-                    }
-                    if (i % 3 == 0) {
-                        array[i] = Math.min(array[i / 3], array[i - 1]) + 1;
-                    }
-                    if (i % 2 == 0 && i % 3 == 0) {
-                        array[i] = Math.min(Math.min(array[i / 2], array[i / 3]), array[i - 1]) + 1;
-                    }
-                } else {
-                    array[i] = array[i - 1] + 1;
-                }
-            }
-        }
+		array[1] = 0;
+		if (array.length > 2) {
+			for (int i = 2; i < array.length; i++) {
+				if (i % 2 == 0 || i % 3 == 0) {
+					if (i % 2 == 0) {
+						array[i] = Math.min(array[i / 2], array[i - 1]) + 1;
+					}
+					if (i % 3 == 0) {
+						array[i] = Math.min(array[i / 3], array[i - 1]) + 1;
+					}
+					if (i % 2 == 0 && i % 3 == 0) {
+						array[i] = Math.min(Math.min(array[i / 2], array[i / 3]), array[i - 1]) + 1;
+					}
+				} else {
+					array[i] = array[i - 1] + 1;
+				}
+			}
+		}
 
-        return array[X];
-    }
+		return array[X];
+	}
 }

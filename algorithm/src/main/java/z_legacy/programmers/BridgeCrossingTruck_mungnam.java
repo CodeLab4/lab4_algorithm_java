@@ -7,48 +7,48 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BridgeCrossingTruck_mungnam {
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int bridge_length = 100;
-        int weight = 100;
-        int[] truck_weights = {10};
+		int bridge_length = 100;
+		int weight = 100;
+		int[] truck_weights = {10};
 
-        int result = solution(bridge_length, weight, truck_weights);
+		int result = solution(bridge_length, weight, truck_weights);
 
-        bw.write(Integer.toString(result));
-        bw.newLine();
+		bw.write(Integer.toString(result));
+		bw.newLine();
 
-        bw.flush();
-        bw.close();
-    }
+		bw.flush();
+		bw.close();
+	}
 
-    public static int solution(int bridge_length, int weight, int[] truck_weights) {
+	public static int solution(int bridge_length, int weight, int[] truck_weights) {
 
-        int timeCount = 0, trucksIndex = 0;
-        Queue<Integer> onBridge = new LinkedList<>();
-        Queue<Integer> timeCountIndex = new LinkedList<>();
+		int timeCount = 0, trucksIndex = 0;
+		Queue<Integer> onBridge = new LinkedList<>();
+		Queue<Integer> timeCountIndex = new LinkedList<>();
 
-        while (true) {
-            timeCount++;
-            if (!onBridge.isEmpty() && timeCount == timeCountIndex.peek()) {
-                weight += onBridge.poll();
-                timeCountIndex.poll();
-            }
-            if (trucksIndex < truck_weights.length) {
-                if (weight - truck_weights[trucksIndex] >= 0) {
-                    weight -= truck_weights[trucksIndex];
-                    onBridge.add(truck_weights[trucksIndex]);
-                    timeCountIndex.add(timeCount + bridge_length);
-                    trucksIndex++;
-                }
-            }
-            if (onBridge.isEmpty()) {
-                break;
-            }
-        }
+		while (true) {
+			timeCount++;
+			if (!onBridge.isEmpty() && timeCount == timeCountIndex.peek()) {
+				weight += onBridge.poll();
+				timeCountIndex.poll();
+			}
+			if (trucksIndex < truck_weights.length) {
+				if (weight - truck_weights[trucksIndex] >= 0) {
+					weight -= truck_weights[trucksIndex];
+					onBridge.add(truck_weights[trucksIndex]);
+					timeCountIndex.add(timeCount + bridge_length);
+					trucksIndex++;
+				}
+			}
+			if (onBridge.isEmpty()) {
+				break;
+			}
+		}
 
-        return timeCount;
-    }
+		return timeCount;
+	}
 }

@@ -3,7 +3,6 @@ package z_legacy.baekjoon;
 public class B1260_Birdie {
 }
 
-
 //from collections import deque
 //
 //node, link, start = map(int, input().split())
