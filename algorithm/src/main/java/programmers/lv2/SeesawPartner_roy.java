@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class seesawPartner_roy {
+public class SeesawPartner_roy {
 	public long solution(int[] weights) {
 		long answer = 0;
 		Arrays.sort(weights);
