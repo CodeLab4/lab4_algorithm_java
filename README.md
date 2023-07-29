@@ -78,6 +78,7 @@ _### 프로그래머스 제목_
 |     시소 짝꿍      |         SeesawPartner         | O  |    |    |    |    |
 |   테이블 해시 함수    |       TableHashFunction       | O  |    |    |    |    |
 |     미로 탈출      |          MazeEscape           | O  |    |    |    |    |
+|     광물 캐기      |         MineralMining         | O  |    |    |    |    |
 |     디펜스 게임     |          DefenceGame          | O  |    |    |    |    |
 
   
