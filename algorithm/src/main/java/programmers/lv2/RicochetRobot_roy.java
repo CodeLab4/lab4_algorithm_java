@@ -1,6 +1,5 @@
 package programmers.lv2;
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -15,18 +14,11 @@ public class RicochetRobot_roy {
 	public static int solution(String[] board) {
 		int INF = Integer.MAX_VALUE;
 		int[][] dist = new int[board.length][board[0].length()];
-
-		for (int i = 0; i < board.length; i++) {
-			for (int j = 0; j < board[0].length(); j++) {
-				dist[i][j] = INF;
-			}
-		}
-
 		int[] start = new int[2];
 		int[] target = new int[2];
 
 		for (int i = 0; i < board.length; i++) {
-			for (int j = 0; j < board[i].length(); j++) {
+			for (int j = 0; j < board[0].length(); j++) {
 				if (board[i].charAt(j) == 'R') {
 					start = new int[] {i, j};
 				}
@@ -34,6 +26,8 @@ public class RicochetRobot_roy {
 				if (board[i].charAt(j) == 'G') {
 					target = new int[] {i, j};
 				}
+
+				dist[i][j] = INF;
 			}
 		}
 
@@ -52,36 +46,33 @@ public class RicochetRobot_roy {
 		dist[start[0]][start[1]] = 0;
 
 		while (!queue.isEmpty()) {
-			int[] now = queue.poll();
-			int row = now[0];
-			int col = now[1];
+			int[] nowPosition = queue.poll();
+			int row = nowPosition[0];
+			int col = nowPosition[1];
 
 			for (int i = 0; i < 4; i++) {
-				int nr = row;
-				int nc = col;
+				int nextRow = row;
+				int nextCol = col;
 				int move = 0;
 
 				while (true) {
-					int newRow = nr + dRow[i];
-					int newCol = nc + dCol[i];
+					int newRow = nextRow + dRow[i];
+					int newCol = nextCol + dCol[i];
 
 					if (newRow < 0 || newRow >= board.length || newCol < 0 || newCol >= board[0].length() || board[newRow].charAt(newCol) == 'D') {
 						break;
 					}
 
-					nr = newRow;
-					nc = newCol;
+					nextRow = newRow;
+					nextCol = newCol;
 					move = 1;
 				}
 
-				if (dist[row][col] + move < dist[nr][nc]) {
-					dist[nr][nc] = dist[row][col] + move;
-					queue.add(new int[] {nr, nc});
+				if (dist[row][col] + move < dist[nextRow][nextCol]) {
+					dist[nextRow][nextCol] = dist[row][col] + move;
+					queue.add(new int[] {nextRow, nextCol});
 				}
 			}
-		}
-		for (int i = 0; i < dist.length; i++) {
-			System.out.println(Arrays.toString(dist[i]));
 		}
 	}
 }
