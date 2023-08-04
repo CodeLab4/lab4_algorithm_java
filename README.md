@@ -50,6 +50,7 @@ _### 프로그래머스 제목_
 |      공원 산책       |                WalkInThePark                | O  |    |    |    |    |
 | 문자열 내림차순으로 배치하기  |           StringDescendingSorter            |    |    |    | O  |    |
 |     자릿수 더하기      |                  DigitSum                   |    |    |    | O  |    |
+| 나머지가 1이 되는 수 찾기  |             OneRemainderSearch              |    |    |    | O  |    |
 
 #### level 2
 
