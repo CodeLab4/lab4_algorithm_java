@@ -49,6 +49,8 @@ _### 프로그래머스 제목_
 |     바탕화면 정리      |               DesktopCleanup                | O  |    |    |    |    |
 |      공원 산책       |                WalkInThePark                | O  |    |    |    |    |
 | 문자열 내림차순으로 배치하기  |           StringDescendingSorter            |    |    |    | O  |    |
+|     자릿수 더하기      |                  DigitSum                   |    |    |    | O  |    |
+| 나머지가 1이 되는 수 찾기  |             OneRemainderSearch              |    |    |    | O  |    |
 
 #### level 2
 
@@ -79,5 +81,10 @@ _### 프로그래머스 제목_
 |   테이블 해시 함수    |       TableHashFunction       | O  |    |    |    |    |
 |     미로 탈출      |          MazeEscape           | O  |    |    |    |    |
 |     광물 캐기      |         MineralMining         | O  |    |    |    |    |
+|     디펜스 게임     |          DefenceGame          | O  |    |    |    |    |
+|     리코쳇 로봇     |         RicochetRobot         | O  |    |    |    |    |
+|     할인 행사      |           SaleEvent           |    |    |    |    | O  |
+|      프로세스      |            Process            |    |    |    |    | O  |
+|  두 원 사이의 정수쌍   | IntegerPairsBetweenTwoCircles | O  |    |    |    |    |
 
   
