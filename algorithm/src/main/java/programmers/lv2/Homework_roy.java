@@ -1,13 +1,11 @@
 package programmers.lv2;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Deque;
-import java.util.HashMap;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Stack;
 
 public class Homework_roy {
 
@@ -18,45 +16,42 @@ public class Homework_roy {
 	}
 
 	public static String[] solution(String[][] plans) {
-		Map<Long, String> workFlow = new HashMap<>();
-		Map<String, Long> workTime = new HashMap<>();
-		List<String> answerList = new ArrayList<>();
-		PriorityQueue<Long> queue = new PriorityQueue<>();
-		Deque<Long> restQueue = new ArrayDeque<>();
+		PriorityQueue<String[]> tasks = new PriorityQueue<>(Comparator.comparing(o -> o[1]));
+		Stack<String[]> paused = new Stack<>();
+		List<String> completed = new ArrayList<>();
 
-		for (String[] s : plans) {
-			long[] timeSplit = Arrays.stream(s[1].split(":")).mapToLong(Long::parseLong).toArray();
-			long minute = timeSplit[0] * 60 + timeSplit[1];
-			workFlow.put(minute, s[0]);
-			workTime.put(s[0], Long.parseLong(s[2]));
-			queue.add(minute);
-		}
+		tasks.addAll(Arrays.asList(plans));
 
 		long currentTime = 0;
-		while (!queue.isEmpty() || !restQueue.isEmpty()) {
-			while (!queue.isEmpty() && queue.peek() <= currentTime) {
-				restQueue.push(queue.poll());
+		while (!tasks.isEmpty() || !paused.isEmpty()) {
+			while (!tasks.isEmpty() && timeToMinutes(tasks.peek()[1]) <= currentTime) {
+				paused.push(tasks.poll());
 			}
 
-			if (restQueue.isEmpty()) {
-				currentTime = queue.peek();
-				continue;
-			}
-
-			String currentTask = workFlow.get(restQueue.peek());
-			long remainingTime = workTime.get(currentTask);
-
-			if (!queue.isEmpty() && currentTime + remainingTime > queue.peek()) {
-				long timeElapsed = queue.peek() - currentTime;
-				workTime.put(currentTask, remainingTime - timeElapsed);
-				currentTime = queue.peek();
+			String[] currentTask;
+			if (paused.isEmpty()) {
+				currentTask = tasks.poll();
+				currentTime = timeToMinutes(currentTask[1]);
 			} else {
-				restQueue.pop();
-				answerList.add(currentTask);
-				currentTime += remainingTime;
+				currentTask = paused.pop();
+			}
+
+			long endTimeForCurrentTask = currentTime + Long.parseLong(currentTask[2]);
+			currentTime = endTimeForCurrentTask;
+
+			if (tasks.isEmpty() || timeToMinutes(tasks.peek()[1]) >= endTimeForCurrentTask) {
+				completed.add(currentTask[0]);
+			} else {
+				currentTask[2] = String.valueOf(endTimeForCurrentTask - timeToMinutes(tasks.peek()[1]));
+				paused.push(currentTask);
 			}
 		}
 
-		return answerList.toArray(new String[0]);
+		return completed.toArray(new String[0]);
+	}
+
+	private static long timeToMinutes(String time) {
+		String[] parts = time.split(":");
+		return Long.parseLong(parts[0]) * 60 + Long.parseLong(parts[1]);
 	}
 }
